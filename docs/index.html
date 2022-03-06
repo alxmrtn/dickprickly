@@ -44,6 +44,14 @@
       background-size: cover;
     }
 
+    #content { 
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      max-width: fit-content;
+    }
+
     h1 {
       color: #fff;
       font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
@@ -52,16 +60,31 @@
       text-align: center;
 
       margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateY(-50%) translateX(-50%);
-      max-width: fit-content;
+    }
+
+    #social {
+      list-style-type: none;
+      text-align: center;
+      background-color: #fff;
+      padding: 10px 10px;
+      max-width: 300px;
+      margin: 15px auto;
+    }
+    
+    #social a {
+      color: #73A163;
+      font-size: 1.3em;
     }
   </style>
 </head>
 
 <body>
+  <div id="content">
   <h1>Coming Soon</h1>
+  <ul id="social">
+    <li><a href="https://www.instagram.com/dick_pricklys_cactus_shack/" target="_blank">instagram</a></li>
+    <li><a href="https://www.reddit.com/user/Dick_Prickly/" target="_blank">reddit</a></li>
+  </ul>
+  </div>
 </body>
 </html>
